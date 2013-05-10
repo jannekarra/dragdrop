@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Drag and drop</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="jquery.ui.touch-punch.min.js.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+		<!-- Sets the words and the slots -->
+		<script>
+			function getData(){  
+			    var words = [
+			    '1',
+			    '2',
+			    '3',
+			    '4', 
+			    '5'
+			    ]
+			    var slots = [
+			    'One', 
+			    'Two', 
+			    'Three', 
+			    'Four', 
+			    'Five'
+			    ]       
+			    return {
+			        'words': words,
+			        'slots': slots
+			    };  
+			};
+		</script>
+
+		<script type="text/javascript" src="main.js"></script>
+
+    </head>
+	
+    <body>
+		<div id="content">
+	 		<div id="dd">
+
+				<!-- VERTICAL -->
+				<div id="words">
+					<div id="wordPile"> </div>
+				</div>
+				<div id="slots">
+					<div id="wordSlots"> </div>
+				</div>
+
+				<!-- HORIZONTAL
+				<div id="horizwords">
+					<div id="wordPile"> </div>
+				</div>
+
+				<div id="horizslots">
+					<div id="wordSlots"> </div>
+				</div>
+				-->
+
+			</div>
+			<div id="stats">
+
+				<div class="answers"></div>
+				<div class="attempts"></div>
+				<div class="corrects"></div>
+		 	
+		 	</div>
+		 	
+			<div id="successMessage">
+				<!-- Html in main.js -->
+				<!-- <h2>You did it!</h2>
+				<button onclick="init()">Play Again</button> -->
+			</div>
+		 
+		</div>
+    </body>
+</html>

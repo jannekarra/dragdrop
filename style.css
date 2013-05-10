@@ -1,0 +1,160 @@
+body {
+  margin: 0 auto;
+  font-family: 'Sans', sans-serif;
+  line-height: 1.8em;
+  color: #333;
+  top:0; left:0;
+}
+ 
+/* Give headings their own font */
+ 
+h1, h2, h3, h4 {
+  font-family: 'Sans', sans-serif;
+}
+
+img{max-width: 100%; height: ; max-height: 75%; display: inline-block;}
+/* Main content area */
+ 
+#content {
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  margin: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#dd{margin: 0 auto;}
+
+#slots{
+  float: left; width: 50%;
+}
+
+#words{
+  float: left; width: 50%;
+}
+
+#wordSlots{
+}
+
+#wordSlots div{
+  width: 90%;
+  max-width: 400px;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#wordSlots.img div{
+  width: 50%;
+  max-width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* While hovering draggable over droppable */
+#wordSlots div.hovered{
+  background-color: red;
+}
+
+/* Words */
+#wordPile {
+}
+
+#wordPile div{
+  width: 90%;
+  max-width: 400px;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e3e3e3;
+}
+
+#wordPile.img div{
+  width: 50%;
+  max-width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e3e3e3;
+}
+
+
+/* Horizontal layout */
+#horizslots{
+  width: 100%;
+}
+#horizwords{
+  width: 100%;
+}
+#horizslots #wordSlots{
+  display: inline-block;
+}
+#horizwords #wordPile{
+  display: inline-block;
+}
+
+#horizslots #wordSlots div{
+  float: left; width: 90px;
+}
+#horizwords #wordPile div{
+  float: left; width: 90px;
+}
+
+#horizwords #wordPile.img div{
+ width: 17% ; max-height: 200px; height: 200px;
+}
+#horizslots #wordSlots.img div{
+ width: 17% ; max-height: 200px; height: 200px;
+}
+
+/* Horizontal END */
+
+
+/* While dragging a word */
+#wordPile div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+} 
+ 
+#wordPile div.correct {
+  background-color: #fff5af;
+} 
+
+/* Stats */
+#stats{
+  margin: 0 auto;
+  width: 100%;
+  float: left;
+}
+
+/* "You did it!" message */
+#successMessage {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 200px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -100px;
+  z-index: 100;
+  background: #f3f3f3;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
+}

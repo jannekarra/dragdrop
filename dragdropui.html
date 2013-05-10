@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Drag and drop</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="jquery.ui.touch-punch.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+		<script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+		<div id="content">
+	 		<div id="dd">
+
+	 			<!-- id="slots" for Vertical layout -->
+	 			<!-- id="horizslots" for Horizontal layout -->
+				<div id="slots">
+					<div id="wordSlots"> </div>
+				</div>
+
+	 			<!-- id="words" for Vertical layout -->
+	 			<!-- id="horizwords" for Horizontal layout -->
+				<div id="words">
+					<div id="wordPile"> </div>
+				</div>
+
+			</div>
+			<div id="stats">
+
+				<div class="answers"></div>
+				<div class="attempts"></div>
+				<div class="corrects"></div>
+		 	
+		 	</div>
+		 	
+			<div id="successMessage">
+				<!-- Html in main.js -->
+				<!-- <h2>You did it!</h2>
+				<button onclick="init()">Play Again</button> -->
+			</div>
+		 
+		</div>
+    </body>
+</html>
